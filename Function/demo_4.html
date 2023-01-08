@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    function doSth(number) {
+        if (number === 2) {
+            return 2;
+        }
+        return number * doSth(number - 1);
+    }
+    // Số 5 : -> doSth(5) return 5 * doSth(4)
+    // So 4: -> doSth (4) return 4 * doSth(3)
+    // So 3: -> doSth(3) return 3 * doSth(2)
+    // So 2: -> doSth(2) return 2
+    // 5 * 4 * 3 * 2 => 120
+    let result = doSth(1);
+    document.write(result)
+</script>
+</html>

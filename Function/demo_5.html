@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    // Tham trị
+    // let number = 5;
+    // function doSth(num) {
+    //     num += 1;
+    //     document.write("Trong function: " + num +"<br>");
+    // }
+    // doSth(number);
+    // document.write("Ngoài function: " + number);
+
+    // Tham chiếu
+    // let arr = [5,6];
+    // function swapArr(arrayNumber) {
+    //     let temp = arrayNumber[0];
+    //     arrayNumber[0] = arrayNumber[1];
+    //     arrayNumber[1] = temp;
+    //     document.write("Trong function: " + arrayNumber +"<br>");
+    //
+    // }
+    // swapArr(arr);
+    // document.write("Ngoài function: " + arr);
+
+    let arr = [5,6];
+    function swapArr(arrayNumber) {
+        let newArray = [arrayNumber[1], arrayNumber[0]];
+        document.write("Trong function: " + newArray +"<br>");
+    }
+    swapArr(arr);
+    document.write("Ngoài function: " + arr);
+</script>
+</html>

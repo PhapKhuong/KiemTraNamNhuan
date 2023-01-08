@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    // let number = 5;
+    //
+    // function doSth(num) {
+    //     num = 10;
+    //     document.write("Trong function : " + num);
+    // }
+    //
+    // doSth(); // lần thứ 1
+    // document.write("Ngoài function: " + doSth(number));
+    //
+    // function isEvenNumber(number) {
+    //     if (number % 2 === 0) {
+    //         return true;
+    //     }
+    // }
+    // isEvenNumber(1);
+    //
+    // let arr = [3, 5, 1, 6, 36, 457, 234];
+    // for (let i = 0; i < arr.length; i++) {
+    //     if (isEvenNumber(arr[i])) {
+    //         document.write(arr[i] + "<br>");
+    //     }
+    // }
+    /*Viết hàm nhận vào 1 mảng
+    * Hàm trả về tổng giá trị các phần tử trong mảng được truyền vào*/
+
+    let arrNumber = [4, 1, 2, 5, 7];
+    let arrNumber2 = [4, 1, 3, 5, 7];
+
+    function totalElementInArray(arr) {
+        let sum = 0;
+        for (let i = 0; i < arr.length; i++) {
+            sum += arr[i];
+
+        }
+        document.write(sum + "<br>");
+        // return sum;
+    }
+
+    totalElementInArray(arrNumber);
+    totalElementInArray(arrNumber2);
+    document.write(result);
+    // let result =
+    // let result2 = totalElementInArray(arrNumber2);
+    // document.write(result + "<br>");
+    // document.write(result2 + "<br>");
+</script>
+</html>
