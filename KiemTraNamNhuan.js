@@ -7,12 +7,13 @@ function testLeapYear()
             {
                 if (input % 100 === 0)
                     {
-                        if (input % 400 !== 0)
+                        if (input % 400 === 0)
                             {
                                 isLeapYear = true;
                             }
                     }
-            }
+                else isLeapYear = true;
+            };
 
         if (isLeapYear)
             {document.getElementById('result').innerText = "Kết quả: " + input + " is not leap year!";}
